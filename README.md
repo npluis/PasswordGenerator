@@ -1,4 +1,5 @@
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-brightgreen.svg)](https://php.net/)
+[![Build Status](https://travis-ci.org/npluis/PasswordGenerator.svg?branch=master)](https://travis-ci.org/npluis/PasswordGenerator)
 
 
 # PasswordGenerator
