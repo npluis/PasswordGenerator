@@ -3,13 +3,13 @@ Simple Password Generator for PHP
 
 Requirements
 ---------------
-* PHP 5.4
+* PHP 7.0
 
 Installation
 ---------------
 `composer require npluis/passwordgenerator`
 
-Usage
+Usage Password Generator
 ---------------
 
 ####basic usage
@@ -29,4 +29,22 @@ $password = $generator->create();
 * only a-zA-Z0-0:
 `$generator->setAllowBrackets(false)->setAllowSpecial(false)->create();`
 
+####advanced usage
+use your own character set
+`$generator->setChars('AbCdEfG@#$%%<>;')->setAllowSpecial(false)->setAllowBrackets(false)`
 
+Usage Password Checker
+---------------
+To prevent weak passwords from being generated or entered by a user when creating a new one you can use some checks. 
+
+check for blacklist words (like password, admin, qwerty, etc)
+```php
+$checker->addToBlacklist('blacklist');
+$checker->checkPassword('123blacklist'); //BLACKLIST_WORD
+$checker->checkPassword('BlackList'); //BLACKLIST_WORD
+```
+
+check for weak passwords like 1111 or aaa by specifying the minimum number of unique lower case characters
+```php
+$checker->setMinUniqueChars(3);
+$checker->checkPassword('111Aa'); //UNIQUE_CHARS only two unique lowercase chars a and 1 
