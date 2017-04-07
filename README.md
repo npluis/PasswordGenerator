@@ -1,3 +1,6 @@
+[![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.0-brightgreen.svg)](https://php.net/)
+
+
 # PasswordGenerator
 Simple Password Generator for PHP
 
