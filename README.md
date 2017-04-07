@@ -12,7 +12,8 @@ Installation
 Usage Password Generator
 ---------------
 
-####basic usage
+###basic usage
+
 ```php
 <?php
 require 'vendor/autoload.php';
@@ -29,8 +30,9 @@ $password = $generator->create();
 * only a-zA-Z0-0:
 `$generator->setAllowBrackets(false)->setAllowSpecial(false)->create();`
 
-####advanced usage
+###advanced usage
 use your own character set
+
 `$generator->setChars('AbCdEfG@#$%%<>;')->setAllowSpecial(false)->setAllowBrackets(false)`
 
 Usage Password Checker
