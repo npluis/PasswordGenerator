@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: stephen
- * Date: 7-4-17
- * Time: 23:02
- */
 
 namespace Npluis\PasswordGenerator;
 

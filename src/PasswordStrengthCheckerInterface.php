@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: stephen
- * Date: 7-4-17
- * Time: 23:06
- */
+
 namespace Npluis\PasswordGenerator;
 
 interface PasswordStrengthCheckerInterface
