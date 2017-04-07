@@ -1,0 +1,15 @@
+{
+  "name": "npluis/passwordgenerator",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "N. Pluis",
+      "email": "npluis@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": { "Npluis\\PasswordGenerator\\": "src\\" }
+  }
+}
