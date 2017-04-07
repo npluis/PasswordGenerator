@@ -26,16 +26,7 @@ class PasswordStrengthChecker implements PasswordStrengthCheckerInterface
      */
     private $minUniqueChars = 4;
 
-    private $minLength=6;
-
-    /**
-     * @param int $minLength
-     */
-    public function setMinLength(int $minLength)
-    {
-        $this->minLength = $minLength;
-    }
-
+    private $minLength = 6;
     /**
      * @var array blacklist words
      */
@@ -43,11 +34,22 @@ class PasswordStrengthChecker implements PasswordStrengthCheckerInterface
         'password',
         'qwerty',
     ];
-
     /**
      * @var array for regex checks
      */
     private $checks = [];
+
+    /**
+     * @param int $minLength
+     *
+     * @return $this
+     */
+    public function setMinLength(int $minLength)
+    {
+        $this->minLength = $minLength;
+
+        return $this;
+    }
 
     /**
      * @param int $num
